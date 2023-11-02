@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :messages
   namespace :api do
   
-      get 'random_message', to: 'messages#get_random_message'
+      get 'random_message', to: 'messages#random_message'
     
   end
   
