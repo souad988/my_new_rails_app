@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import Greeting from './Greeting';
 
-function App() {
+
+const App = () => {
+  /*
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    console.log('dispatch is working');
+    dispatch(fetchMessage());
+  }, []);
+*/
   return (
-    <div><h1>App components title</h1>
-    <Routes> 
-  <Route path="/" element={<Greeting/>} />
-</Routes>
-   </div>
+    <Routes>
+      <Route path="/" element={<Greeting />} />
+    </Routes>
   );
-}
+};
 
 export default App;
