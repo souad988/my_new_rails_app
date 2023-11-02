@@ -8,6 +8,8 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' https: 'unsafe-inline';">
+
   </head>
 
   <body>
